@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "voluntaries",
+  "info": {
+    "name": "VOLUNTARY",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "dpi": {
+      "type": "string"
+    },
+    "firstname": {
+      "type": "string"
+    },
+    "secondname": {
+      "type": "string"
+    },
+    "firstsurname": {
+      "type": "string"
+    },
+    "secondsurname": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "birthdate": {
+      "type": "date"
+    },
+    "zipcode": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "boolean"
+    },
+    "city_id": {
+      "model": "city"
+    },
+    "state_id": {
+      "model": "state"
+    },
+    "volunteerposition_id": {
+      "model": "volunteerposition"
+    }
+  }
+}

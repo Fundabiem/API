@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/volunteerpositions",
+      "handler": "volunteerposition.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/volunteerpositions/count",
+      "handler": "volunteerposition.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/volunteerpositions/:id",
+      "handler": "volunteerposition.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/volunteerpositions",
+      "handler": "volunteerposition.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/volunteerpositions/:id",
+      "handler": "volunteerposition.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/volunteerpositions/:id",
+      "handler": "volunteerposition.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

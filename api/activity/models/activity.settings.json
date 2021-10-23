@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "activity_s",
+  "info": {
+    "name": "ACTIVITY ",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "status": {
+      "type": "boolean"
+    },
+    "activity_type_id": {
+      "model": "activity-type",
+      "via": "activity_id"
+    }
+  }
+}

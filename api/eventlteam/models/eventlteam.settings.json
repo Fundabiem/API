@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "eventlteams",
+  "info": {
+    "name": "EVENTLTEAM",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "startdate": {
+      "type": "date"
+    },
+    "enddate": {
+      "type": "date"
+    },
+    "starthour": {
+      "type": "time"
+    },
+    "endhour": {
+      "type": "time"
+    },
+    "status": {
+      "type": "boolean"
+    },
+    "voluntary_id": {
+      "model": "voluntary"
+    },
+    "activity_id": {
+      "model": "activity"
+    },
+    "event_id": {
+      "model": "event"
+    }
+  }
+}

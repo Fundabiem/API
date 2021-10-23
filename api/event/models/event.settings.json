@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "name": "EVENT",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "startdate": {
+      "type": "date"
+    },
+    "enddate": {
+      "type": "date"
+    },
+    "starthour": {
+      "type": "time"
+    },
+    "endhour": {
+      "type": "time"
+    },
+    "state_id": {
+      "model": "state"
+    },
+    "city_id": {
+      "model": "city"
+    },
+    "country_id": {
+      "model": "country"
+    },
+    "eventsatus_id": {
+      "model": "eventsatus"
+    }
+  }
+}

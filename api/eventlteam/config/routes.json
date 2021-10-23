@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/eventlteams",
+      "handler": "eventlteam.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/eventlteams/count",
+      "handler": "eventlteam.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/eventlteams/:id",
+      "handler": "eventlteam.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/eventlteams",
+      "handler": "eventlteam.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/eventlteams/:id",
+      "handler": "eventlteam.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/eventlteams/:id",
+      "handler": "eventlteam.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

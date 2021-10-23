@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/eventsatuses",
+      "handler": "eventsatus.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/eventsatuses/count",
+      "handler": "eventsatus.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/eventsatuses/:id",
+      "handler": "eventsatus.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/eventsatuses",
+      "handler": "eventsatus.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/eventsatuses/:id",
+      "handler": "eventsatus.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/eventsatuses/:id",
+      "handler": "eventsatus.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
